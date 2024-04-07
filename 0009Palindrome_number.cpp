@@ -4,9 +4,12 @@ using namespace std;
 class Solution {
 public:
     bool isPalindrome(int x) {
-		if(x<=0){
+		if(x<0){
 			return false;
-		}else{
+		}else if(x == 0){
+			return true;
+		}
+		else{
   			long long int temp=x;
 			long long int temp1=x;
 			
